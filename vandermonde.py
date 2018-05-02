@@ -19,6 +19,7 @@ def out_matrix(in_vector):
     Iterating through each element of the vector and applying exponential operation on each of the element with operand starting from 0 to n-1th element
     and populating the result in a 2D array. Finally applied Transpose function on the resultant 2D array to obtain the desired output with increasing geometric progression as per Vandermonde Matrix Theory
     '''
+    #y = np.array([x**(N-i-1) for i in range(N)]) # Implementing Decreasing boolean argument
     y = np.array([x**i for i in range(N)])
     return(y.T)
 in_vector = [1,4,5,7]
